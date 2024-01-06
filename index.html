@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DS - Deep Service</title>
+  <!-- Fonte -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- CSS do projeto -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Icons -->
+  <link rel="icon" href="./img/logo.png" type="image/png">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <!-- Scripts -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+  <!-- Progress Bar -->
+  <script src="js/progressbar.min.js"></script>
+  <!-- Parallax -->
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container" id="nav-container">
+      <!-- add essa class -->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img id="logo" src="img/logo.png" alt="logo-deep-service"> DEEP SERVICE
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" id="home-menu" href="#">HOME</span></a>
+            <a class="nav-item nav-link" id="about-menu" href="./about.html">ABOUT US</a>
+            <a class="nav-item nav-link" id="services-menu" href="./services.html">SERVICES</a>
+            <a class="nav-item nav-link" id="team-menu" href="./clients.html">CLIENTS</a>
+            <a class="nav-item nav-link" id="portfolio-menu" href="./candidates.html">CANDIDATES</a>
+            <a class="nav-item nav-link" id="contact-menu" href="./contact.html">CONTACT</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <!-- slider -->
+      <div id="mainSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+          <li data-target="#mainSlider" data-slide-to="1"></li>
+          <li data-target="#mainSlider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner1.jpg" class="d-block w-100" alt="Deep-Service">
+            <div class="carousel-caption d-md-block">
+              <h2>Get access to the best job opportunities around the world!</h2>
+              <!-- <p>Do you want to be part of this team?</p>
+              <a href="./contact.html" class="main-btn">Click here</a> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner2.jpg" class="d-block w-100" alt="Deep-Service">
+            <div class="carousel-caption d-md-block">
+                <h2>Your needs are our Challenges</h2>
+                <!-- <p>Do you want to be part of this team?</p>
+                <a href="./contact.html" class="main-btn">Click here</a> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner3.jpg" class="d-block w-100" alt="Deep-Service">
+            <div class="carousel-caption d-md-block">
+                <h2>Let´s go Deep</h2>
+                <!-- <p>Do you want to be part of this team?</p>
+                <a href="./contact.html" class="main-btn">Click here</a> -->
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <!-- Sobre a empresa -->
+
+      <div id="about-area">
+        <div class="container">
+            <div class="row">
+              <div class="col-12"> 
+                <h3 class="main-title">Overview</h3>
+              </div>
+              <div class="col-md-6">
+                <img class="img-fluid" src="img/about-home.jpeg" alt="Deep-Service">
+              </div>
+              <div class="col-md-6">
+                <h3 class="about-title">Deep Knowledge in Personnel</h3>
+                <p class="about-home">Deep Service acts as a link between our Consultants and our Clients, making it easier for Clients to execute their projects quickly and safely, having the ideal Professionals for the needs of their projects.</p>
+                <!-- <p class="about-home">Highly trained and qualified professionals, providing time and performance savings in the execution of your operations, delivering projects safely and in an increasingly faster time.</p> -->
+                <p class="about-home">At all levels of the organization, we seek to instill:</p>
+                <ul id="about-list">
+                  <li><i class="fas fa-check"></i>Respect, innovation, Team work, transparency, values, to create an environment that promotes sustainable success and also contributes positively to the surrounding society.</li>
+                  <li><i class="fas fa-check"></i>We are dedicated to incorporating these good characteristics and values ​​into all of our activities, ensuring that each member of our team understands and embraces this shared vision. In doing so, we aspire to strengthen our reputation as an organization that operates ethically and makes a meaningful difference in our sector and community.</li>
+                </ul><br>
+                <a href="about.html" class="about-btn">Click here</a>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Serviços da empresa -->
+
+      <div id="services-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="main-title">Get in touch whenever you need</h3>
+            </div>
+      
+            <div class="col-md-4 service-box">
+              <a href="./services.html">
+              <img src="./img/rov.svg" alt="rov" class="icons-service"></a>
+              <h4>ROV</h4>
+              <!-- <a href="./services.html" class="btn btn-primary">Know more</a> -->
+            </div>
+      
+            <div class="col-md-4 service-box">
+              <a href="./services.html">
+              <img src="./img/survey.svg" alt="survey" class="icons-service"></a>
+              <h4>SURVEY</h4>
+            </div>
+      
+            <div class="col-md-4 service-box">
+              <a href="./services.html">
+              <img src="./img/renewable.svg" alt="energy-renewable" class="icons-service"></a>
+              <h4>RENEWABLES</h4>
+            </div>
+      
+            <div class="col-md-4 service-box">
+              <a href="./services.html">
+              <img src="./img/seismic.svg" alt="energy-renewable" class="icons-service"></a>
+              <h4>SEISMIC</h4>
+            </div>
+
+            <div class="col-md-4 service-box">
+              <a href="./services.html">
+              <img src="./img/marine.svg" alt="energy-renewable" class="icons-service"></a>
+              <h4>MARINE</h4>
+            </div>
+      
+            <div class="col-md-4 service-box">
+              <a href="./services.html">
+                <img src="./img/drilling.svg" alt="energy-renewable" class="icons-service"></a>
+                <h4>DRILLING</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="parallax-container" id="parallax-container">
+        <img src="./img/parallax.jpg" alt="Imagem Parallax" class="parallax-image">
+        <h3 class="title-parallax">Company Values</h3>
+        <div class="card">
+          <div class="rating">
+            <h2><span class="counter" data-target="100">100</span><sup>%</sup><br>Compliance</h2>
+            <div class="block"></div>
+          </div>
+    
+          <div class="rating">
+            <h2><span class="counter" data-target="100">100</span><sup>%</sup><br>Commitment</h2>
+            <div class="block"></div>
+          </div>
+    
+          <div class="rating">
+            <h2><span class="counter" data-target="100">100</span><sup>%</sup><br>Integrity</h2>
+            <div class="block"></div>
+          </div>
+    
+          <div class="rating">
+            <h2><span class="counter" data-target="100">100</span><sup>%</sup><br>Responsibility</h2>
+            <div class="block"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div id="call-area">
+        <div class="container">
+            <div class="row">
+              <p>Do you want to be part of our team?</p>
+            </div>
+          </div>
+      </div>
+    </div>
+ 
+    <!-- Video Area -->
+ <div class="slick-carousel video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/n57pfA5zbk8?si=Qw-B-LO0P9DJN4so&amp&vq=hd1080&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+</main>
+  
+  <!-- Rodapé -->
+  <footer>
+    <div id="contact-area">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title">Contact us</h3>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-phone"></i>
+              <p><span class="contact-tile">Phones:</span> +44 (0) 7487 811753<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; +55 (21) 97721 3768</p>
+              <!-- <p><span class="contact-tile">Horários:</span> 8:00 - 19:00</p> -->
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-envelope"></i>
+              <p><span class="contact-tile">E-mail:</span> contato@dsdeepservice.com</p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-map-marker-alt"></i>
+              <p><span class="contact-tile">Location:</span> Estrada do Galeão - 01537 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Jardim Guanabara - RJ </p>
+            </div>
+              <div class="col-md-6" id="msg-box">
+                <p>Or leave us a message:</p>
+              </div>
+              <div class="col-md-6" id="contact-form">
+                <form action="">
+                  <input type="text" class="form-control" placeholder="E-mail" name="email">
+                  <input type="text" class="form-control" placeholder="Subject" name="subject">
+                  <textarea class="form-control" rows="3" placeholder="Your message..." name="message"></textarea>
+                  <input type="submit" class="main-btn">
+                </form>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+    <div id="copy-area">
+      <div class="container-footer">
+        <div class="row"></div>
+        <div class="text-center"><i class="fas fa-ellipsis-h"></i></div>
+        <div class="row text-center">
+          <div class="col-md-4 box">
+            <div class="align-items-center">
+              <a href="#"><img class="logo-footer" src="./img/mapa1.jpg" alt="Mapa Mundi" /></a>
+
+              <p class="texto-logo copyright quick-links mb-0">DEEP SERVICE</p>
+            </div>
+          </div>
+          <div class="col-md-4 box">
+            <span class="copyright quick-links"
+              >Copyright &copy; 2023 | All Rights Reserved | Deep Service
+              <p>
+                <a
+                  class="a-footer"
+                  href="https://www.danielcorrea.online"
+                  target="_blank"
+                >
+                  Designed by Daniel Correa</a
+                >
+              </p></span
+            >
+          </div>
+          <div class="col-md-4 box">
+            <p class="copyright quick-links">Social Media Channels</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <!-- Api Whatsapp -->
+  <a href="https://api.whatsapp.com/send?phone=5521992834140&text=I%20want%20to%20know%20information%20about%20available%20opportunities!" class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="350">
+    <img src="./img/whatssapp.svg" alt="Botao whatsapp" />
+    <span class="tooltip-text">Contact</span>
+  </a>
+
+  <!-- Scripts do projeto -->
+  <script src="js/scripts.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="./js/aboutvideo.js"></script>
+  
+</body>
+</html>
